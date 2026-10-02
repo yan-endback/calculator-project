@@ -2,6 +2,9 @@ package com.yan.calculator;
 
 import com.yan.calculator.model.Expression;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class InputParser {
     private static final int PARTS_COUNT = 3;
     private static final String ERROR_UNKNOWN_FORMAT = "Ошибка: неверный формат. Используйте: число оператор число";
@@ -22,4 +25,5 @@ public class InputParser {
         }
         return new Expression(firstNumber,secondNumber,operator);
         }
+
     }
